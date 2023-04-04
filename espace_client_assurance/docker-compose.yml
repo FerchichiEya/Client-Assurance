@@ -1,0 +1,12 @@
+version: "3"
+services:
+  Espace_client_Assurance:
+      container_name: Espace_client_Assurance
+      stdin_open: true
+      build: .
+      restart: always
+      environment:
+        SHELL: /bin/bash
+      ports:
+        - "1200:80"
+      
